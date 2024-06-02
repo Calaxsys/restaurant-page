@@ -1,0 +1,1 @@
+- Creating the Restaurant Page project from The Odin Project using newly learned npm modules
