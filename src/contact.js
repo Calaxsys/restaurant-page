@@ -18,12 +18,13 @@ const createContactPage = () => {
   pageContent.appendChild(header);
 
   //Create and append the content elements to the page
-  const contactPage = document.createElement('div');
-  contactPage.id = 'container';
-  
+  const contactPageContainer = document.createElement('div');
+  contactPageContainer.id = 'container';
+  pageContent.appendChild(contactPageContainer);
+  content.appendChild(pageContent);
+
   addPersonToContactPage(person1);
   addPersonToContactPage(person2);
-
-  pageContent.appendChild(contactPage);
-  content.appendChild(pageContent);
 }
+
+export default createContactPage;

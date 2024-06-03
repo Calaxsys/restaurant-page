@@ -12,6 +12,11 @@ class personContactInfo {
 function addPersonToContactPage(person) {
   const contactContainer = document.querySelector('#container');
 
+  if (!contactContainer) {
+    console.error('Contact container not found');
+    return;
+  }
+
   const contactPersonElement = document.createElement('div');
   contactPersonElement.classList.add('contact-person'); 
 
