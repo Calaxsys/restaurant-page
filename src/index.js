@@ -1,5 +1,5 @@
 import initialLoad from './loadPage';
-import '../dist/styles.css';
+import '../src/styles.css'
 
 //Load page
 initialLoad();
