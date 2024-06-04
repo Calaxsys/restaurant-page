@@ -21,7 +21,13 @@ const createRestaurantHomePage = () => {
   const paragraph1 = document.createElement('p');
   paragraph1.textContent = "Come on in to enjoy some of our fantastic selections, at the newly opened location!"
   paragraph1.classList.add('p-txt');
+
+  const paragraph2 = document.createElement('p');
+  paragraph2.textContent = "We are excited to see you!";
+  paragraph2.classList.add('p-txt');
+
   pageContent.appendChild(paragraph1);
+  pageContent.appendChild(paragraph2);
   content.appendChild(pageContent);
 }
 
