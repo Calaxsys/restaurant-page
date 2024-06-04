@@ -10,17 +10,27 @@ const loadPageOnClick = () => {
   const contactButton = document.getElementById('contact-btn');
 
   homeButton.addEventListener('click', () => {
-    const content = document.querySelector('.content');
+    clearContent();
     createRestaurantHomePage();
   });
 
   menuButton.addEventListener('click', () => {
+    clearContent();
     createMenuPage();
   });
 
   contactButton.addEventListener('click', () => {
+    clearContent();
     createContactPage();
   });
 };
+
+function clearContent() {
+  const content = document.querySelector('#content');
+  const pageContent = document.querySelector('.page-content');
+  if (pageContent) {
+    content.removeChild(pageContent);
+  }
+}
 
 export default loadPageOnClick;
