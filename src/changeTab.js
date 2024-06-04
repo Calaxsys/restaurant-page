@@ -28,8 +28,12 @@ const loadPageOnClick = () => {
 function clearContent() {
   const content = document.querySelector('#content');
   const pageContent = document.querySelector('.page-content');
+  const pageContentMenu = document.querySelector('.page-content-menu');
   if (pageContent) {
     content.removeChild(pageContent);
+  }
+  else if (pageContentMenu) {
+    content.removeChild(pageContentMenu);
   }
 }
 
