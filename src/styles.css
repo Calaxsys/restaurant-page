@@ -84,3 +84,27 @@ body {
   font-size: 1.5em;
   text-align: center;
 }
+
+/* CSS for contact page */
+#container {
+  display: flex;
+  flex-direction: column;
+  gap: 2em;
+
+}
+
+.contact-person {
+  background-color: var(--color-4);
+  color: var(--color-1);
+  padding: 3em;
+  border-radius: 16px;
+}
+
+.contact-person > h3 {
+  font-size: 39px;
+  font-style: italic;
+}
+
+.contact-person > p {
+  font-size: 28px;
+}
